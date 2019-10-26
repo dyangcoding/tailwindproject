@@ -1,0 +1,43 @@
+.p-1 {
+    padding: 0.25rem;
+} 	
+
+.p-2 {
+    padding: 0.5rem;
+} 	
+
+.p-3 {
+    padding: 0.75rem;
+} 	
+
+.p-4 {
+    padding: 1rem;
+}
+
+.p-5 {
+    padding: 1.25rem;
+}
+
+.p-6 {
+    padding: 1.5rem;
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+.p-10 {
+    padding: 2.5rem;
+}	
+
+.p-12 {
+    padding: 3rem;
+}	
+
+.item-start {
+    align-items: flex-start;
+}
+
+.item-end {
+    align-items: flex-end;
+}

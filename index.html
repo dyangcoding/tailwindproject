@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/util.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="container f-container primary-bg p-5">
+            <div class="f-item">
+                <i class="fab fa-houzz"></i>
+                <a class="n-label" href="#">
+                    Hacker News Search
+                </a>
+            </div>
+            <div class="f-item search">
+                <span class="fa fa-search"></span>
+                <input class="navbar-search" type="search" placeholder="search whatever you want">
+            </div>
+            <div class="f-item">
+                <i class="fas fa-cog"></i>
+                <a class="n-label" href="#">
+                    Setting
+                </a>
+            </div>
+            
+        </div>
+    </nav>
+
+    <!--filter row-->
+    <div class="container f-container sec-bg filter-h">
+        <div class="f-item p-2">
+            <label class="p-1" for="search-select">Search</label>
+            <select class="f-select">
+                <option value="">Stories</option>
+                <option value="All">All</option>
+                <option value="comments">comments</option>
+            </select>
+
+            <label class="p-1" for="search-select">by</label>
+            <select class="f-select">
+                <option value="">Popularity</option>
+                <option value="Date">Date</option>
+            </select>
+
+            <label class="p-1" for="search-select">for</label>
+            <select class="f-select">
+                <option value="">All time</option>
+                <option value="Last 24">Last 24</option>
+                <option value="Past Week">Past Week</option>
+                <option value="Past Month">Past Month</option>
+                <option value="Past Year">Past Year</option>
+                <option value="Custom Range">Custum Range</option>
+            </select>
+
+            <!--filter result-->
+            <span class="p-2">( 21938931 results )</span>
+            <span class="fas fa-share-alt"></span>
+        </div>
+    </div>
+
+    <!--tailwind test-->
+    <div class="tw-text-lg md:tw-text-xl tw-bg-red-500 hover:tw-bg-blue-500">
+        jdoajdoija
+    </div>
+</body>
+</html>

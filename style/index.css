@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.primary-bg {
+    background-color: #FF742B;
+}
+
+.sec-bg {
+    background-color: #F6F6EF;
+}
+
+.navbar {
+    font-size: 18px;
+    background-image: white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.n-label {
+    text-decoration: none;
+    color: black;
+    letter-spacing: .1rem;
+}
+
+.navbar-search {
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    box-shadow: none;
+    font-family: 'Roboto','Noto',sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 4px;
+    max-width: 100%;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    padding: 2px 6px;
+}
+
+.f-item input {
+    text-indent: 32px;
+}
+
+.search {
+    position: relative;
+    max-width: 640px;
+    width: 100%;
+}
+
+.f-item .fa-search {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
+
+.f-item {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.f-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.f-select {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 300;
+    color: #444;
+    line-height: 1;
+    padding: .6em 2.5em .5em .8em;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: .2em;
+    background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") right center no-repeat; 
+	appearance: none; 
+	-webkit-appearance: none;
+	-moz-appearance: none; 
+    background-color: #fff;
+}
