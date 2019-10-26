@@ -4,70 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style/index.css">
-    <link rel="stylesheet" href="style/util.css">
+    <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <title>Document</title>
 </head>
 <body>
     <!--navbar-->
-    <nav class="navbar">
-        <div class="container f-container primary-bg p-5">
-            <div class="f-item">
-                <i class="fab fa-houzz"></i>
-                <a class="n-label" href="#">
+    <nav class="flex justify-center flex-wrap bg-red-400 h-16">
+        <div class="flex flex-wrap -mx-3 p-1">
+            <div class="flex pl-6 items-center justify-end">
+                <i class="block fab fa-houzz"></i>
+                <a class="pl-2 tracking-wide text-xl" href="#">
                     Hacker News Search
                 </a>
             </div>
-            <div class="f-item search">
-                <span class="fa fa-search"></span>
-                <input class="navbar-search" type="search" placeholder="search whatever you want">
+        </div>
+        
+        <div class="flex flex-wrap py-3 px-4 items-center lg:w-3/4 justify-around">
+            <div class="w-3xl shadow flex xl:w-3/4 items-center relative">
+                <input class="w-full rounded py-3 px-8" type="text" placeholder="Search Stories by title, url or author">
+                <span class="absolute w-auto flex justify-start items-center text-grey px-3 fa fa-search">
+                </span>
             </div>
-            <div class="f-item">
+            <div class="flex items-center">
                 <i class="fas fa-cog"></i>
-                <a class="n-label" href="#">
+                <a class="p-1 pr-6 tracking-wide text-xl" href="#">
                     Setting
                 </a>
             </div>
-            
-        </div>
+        </div>            
     </nav>
 
     <!--filter row-->
-    <div class="container f-container sec-bg filter-h">
-        <div class="f-item p-2">
-            <label class="p-1" for="search-select">Search</label>
-            <select class="f-select">
-                <option value="">Stories</option>
-                <option value="All">All</option>
-                <option value="comments">comments</option>
-            </select>
+    <div class="flex flex-wrap justify-around bg-gray-100">
+        <div class="flex flex-wrap -mx-3 p-1 justify-start">
+            <div class="pl-2 mb-6 md:mb-0 flex items-center">
+                <label class="block tracking-wide text-gray-700 p-2" for="grid-state">
+                Search
+                </label>
+                <div class="relative">
+                    <select class="block appearance-none bg-gray-200 border border-gray-200 text-gray-700 py-1 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                        <option value="">Stories</option>
+                        <option value="All">All</option>
+                        <option value="comments">comments</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="pl-2 mb-6 md:mb-0 flex items-center">
+                <label class="block tracking-wide text-gray-700 p-2" for="grid-state">
+                by
+                </label>
+                <div class="relative">
+                    <select class="block appearance-none bg-gray-200 border border-gray-200 text-gray-700 py-1 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                        <option value="">Popularity</option>
+                        <option value="Date">Date</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="px-2 mb-6 md:mb-0 flex items-center">
+                <label class="block tracking-wide text-gray-700 p-2" for="grid-state">
+                For
+                </label>
+                <div class="relative">
+                    <select class="block appearance-none bg-gray-200 border border-gray-200 text-gray-700 py-1 px-2 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                        <option value="">All time</option>
+                        <option value="Last 24">Last 24</option>
+                        <option value="Past Week">Past Week</option>
+                        <option value="Past Month">Past Month</option>
+                        <option value="Past Year">Past Year</option>
+                        <option value="Custom Range">Custum Range</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <label class="p-1" for="search-select">by</label>
-            <select class="f-select">
-                <option value="">Popularity</option>
-                <option value="Date">Date</option>
-            </select>
-
-            <label class="p-1" for="search-select">for</label>
-            <select class="f-select">
-                <option value="">All time</option>
-                <option value="Last 24">Last 24</option>
-                <option value="Past Week">Past Week</option>
-                <option value="Past Month">Past Month</option>
-                <option value="Past Year">Past Year</option>
-                <option value="Custom Range">Custum Range</option>
-            </select>
-
-            <!--filter result-->
+        <div class="flex flex-wrap items-center">
             <span class="p-2">( 21938931 results )</span>
             <span class="fas fa-share-alt"></span>
         </div>
     </div>
-
     <!--tailwind test-->
-    <div class="tw-text-lg md:tw-text-xl tw-bg-red-500 hover:tw-bg-blue-500">
-        jdoajdoija
+    <div class="bg-green-300">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit doloremque odio ea ut autem? Eos omnis hic illum exercitationem! Consectetur odit obcaecati, eveniet quas quaerat optio recusandae. Atque, aliquam aut?
+        Consequuntur mollitia quam numquam earum corporis animi veritatis enim fugit voluptates aspernatur ea, ipsam pariatur cupiditate eius. Itaque laudantium neque veniam, sed eos blanditiis nulla sit suscipit! Quos, architecto fuga!
+        Accusamus necessitatibus nam quaerat officia voluptates! Quo amet molestiae veniam reprehenderit qui quia, ipsa, fugiat magni, nulla perferendis provident ut dolore architecto unde eligendi quasi error doloremque aut dolores a.
+        Adipisci quasi beatae error molestiae. Fuga blanditiis facere exercitationem, explicabo nam enim quae nemo, nihil accusamus qui consectetur hic eius beatae ea rerum vitae tempore. Corrupti ipsa voluptatibus doloribus explicabo.
+        Officia voluptas rerum et veniam ut non alias, quia ex impedit ratione eaque! Voluptas sapiente, culpa, tempore fugiat accusantium rerum cupiditate neque est repudiandae officiis reiciendis ex tenetur doloribus quis?
     </div>
 </body>
 </html>
